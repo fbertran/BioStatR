@@ -4,25 +4,25 @@
 Graphique des quantiles (qqplot) et droite interquartile
 }
 \description{
-Dessine le graphique des quantiles ou \code{\link{qqplot}} et la droite interquartile (passant par le premier et le troisième quartile à la manière de la fonction \code{\link{qqline}}) avec la bibliothèque graphique \code{ggplot2}.
+Dessine le graphique des quantiles ou \code{\link{qqplot}} et la droite interquartile (passant par le premier et le troisi?me quartile ? la mani?re de la fonction \code{\link{qqline}}) avec la biblioth?que graphique \code{ggplot2}.
 }
 \usage{
 gg_qqplot(df,var,qdist=qnorm,params=list(),qq.line=TRUE,color="red",alpha=.5) 
 }
 \arguments{
-  \item{df}{Un jeu de données (dataframe)}
+  \item{df}{Un jeu de donn?es (dataframe)}
   \item{var}{Le nom d'une variable de df}
-  \item{qdist}{La fonction quantile d'une (famille de) distribution. Par défaut celle de la famille des lois normales.}
-  \item{params}{Une liste de paramètres pour spécifier la loi à utiliser. Par défaut la loi normale centrée et réduite. Les paramètres peuvent être estimés avec la fonction \code{\link[MASS]{fitdistr}} de la bibliothèque MASS.}
+  \item{qdist}{La fonction quantile d'une (famille de) distribution. Par d?faut celle de la famille des lois normales.}
+  \item{params}{Une liste de param?tres pour sp?cifier la loi ? utiliser. Par d?faut la loi normale centr?e et r?duite. Les param?tres peuvent ?tre estim?s avec la fonction \code{\link[MASS]{fitdistr}} de la biblioth?que MASS.}
   \item{qq.line}{Une valeur logique. Affiche ou masque la droite interquartile.}
-  \item{color}{Le nom d'une couleur. Spécifie la couleur à utiliser pour la droite interquartile.}
-  \item{alpha}{Indice de transparence. Spécifie la transparence à utiliser pour représenter les valeurs de l'échantillon.}
+  \item{color}{Le nom d'une couleur. Sp?cifie la couleur ? utiliser pour la droite interquartile.}
+  \item{alpha}{Indice de transparence. Sp?cifie la transparence ? utiliser pour repr?senter les valeurs de l'?chantillon.}
 }
 \value{
-\item{ggplot}{Un graphique utilisant la bibliothèque ggplot2. Affiche les valeurs des quartiles théoriques par lesquels passe la droite ainsi que son ordonnée à l'origine et sa pente si la tracé de celle-ci est demandé.}
+\item{ggplot}{Un graphique utilisant la biblioth?que ggplot2. Affiche les valeurs des quartiles th?oriques par lesquels passe la droite ainsi que son ordonn?e ? l'origine et sa pente si la trac? de celle-ci est demand?.}
 }
-\references{F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec R, Dunod, 2e, 2014.}
-\author{\enc{Frédéric}{Fr\'ed\'eric} Bertrand\cr
+\references{F. Bertrand, M. Maumy-Bertrand, Initiation ? la Statistique avec R, Dunod, 2e, 2014.}
+\author{\enc{Fr?d?ric}{Fr\'ed\'eric} Bertrand\cr
 \email{frederic.bertrand@math.unistra.fr}\cr
 \url{http://www-irma.u-strasbg.fr/~fbertran/}
 \enc{Myriam}{Myriam} Maumy-Bertrand\cr
@@ -51,7 +51,8 @@ params <- as.list(fitdistr(lauriers.roses$taille,"gamma")$estimate)
 #avec la droite
 gg_qqplot(lauriers.roses,"taille",qgamma,params)
 #essayons un qqplot avec une loi du chi-deux
-params <- list(df=fitdistr(lauriers.roses$taille,"chi-squared",start=list(df=5),method="Brent",lower=1,upper=40)$estimate)
+params <- list(df=fitdistr(lauriers.roses$taille,"chi-squared",start=list(df=5),
+method="Brent",lower=1,upper=40)$estimate)
 #avec la droite
 gg_qqplot(lauriers.roses,"taille",qchisq,params)
 }
