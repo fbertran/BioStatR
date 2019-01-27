@@ -1,4 +1,8 @@
 import(ggplot2)
+importFrom("grDevices", "colorRampPalette", "gray")
+importFrom("graphics", "hist", "par", "persp", "rect")
+importFrom("stats", "as.formula", "lm", "qchisq", "qf", "qnorm",
+           "quantile", "sd")
 
 # functions
 export(cvar) 

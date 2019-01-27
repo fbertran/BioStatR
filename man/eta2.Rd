@@ -1,22 +1,22 @@
 \name{eta2}
 \alias{eta2}
 \title{
-Calcul du rapport de corrélation eta carré}
+Calcul du rapport de corrÃ©lation eta carrÃ©}
 \description{
-Cette fonction calcule le rapport de corrélation \eqn{\eta^2} qui est une mesure d'association importante entre une variable quantitative et une variable qualitative. 
+Cette fonction calcule le rapport de corrÃ©lation \eqn{\eta^2} qui est une mesure d'association importante entre une variable quantitative et une variable qualitative. 
 }
 \usage{
 eta2(x, y)
 }
 \arguments{
-  \item{x}{Un vecteur associé à la variable quantitative}
-  \item{y}{Un facteur associé à la variable qualitative}
+  \item{x}{Un vecteur associÃ© Ã  la variable quantitative}
+  \item{y}{Un facteur associÃ© Ã  la variable qualitative}
 }
 \value{
-\item{num}{La valeur du rapport de corrélation empirique}
+\item{num}{La valeur du rapport de corrÃ©lation empirique}
 }
-\references{F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec R, Dunod, 2010.}
-\author{\enc{Frédéric}{Fr\'ed\'eric} Bertrand\cr
+\references{F. Bertrand, M. Maumy-Bertrand, Initiation Ã  la Statistique avec R, Dunod, 3Ã¨me edition, 2018.}
+\author{\enc{FrÃ©dÃ©ric}{Fr\'ed\'eric} Bertrand\cr
 \email{frederic.bertrand@math.unistra.fr}\cr
 \url{http://www-irma.u-strasbg.fr/~fbertran/}
 \enc{Myriam}{Myriam} Maumy-Bertrand\cr

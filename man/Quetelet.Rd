@@ -3,19 +3,19 @@
 \docType{data}
 \title{Indices de Quetelet}
 \description{
-This dataset provide heights and masses for computing biomass indices.
+Ce jeu de données contient des mesures de masse et de taille pour permettre le calcul de l'indice de masse corporelle (aussi dit de Quetelet).
 }
 \usage{Quetelet}
 \format{
-  A data frame with 66 observations on the following 3 variables.
+  Un data frame avec 66 observations de 3 variables.
   \describe{
-    \item{\code{sexe}}{a factor with the sex of the individual}
-    \item{\code{poids}}{weight of the individual}
-    \item{\code{taille}}{height of the individual}
+    \item{\code{sexe}}{un facteur donnant le sexe de l'individu}
+    \item{\code{poids}}{le poids de l'individu}
+    \item{\code{taille}}{la hauteur de l'individu}
   }
 }
-\details{The weight is given in kg and the height in cm}
-\source{F. Bertrand, M. Maumy-Bertrand, Initiation � la Statistique avec R, Dunod, 2010.}
+\details{Le poids est exprimée en kg et la hauteur en cm}
+\references{F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec R, Dunod, 3ème edition, 2018.}
 \examples{
 data(Quetelet)
 }

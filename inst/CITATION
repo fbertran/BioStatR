@@ -4,6 +4,7 @@ titl <- meta$Title
 year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
 vers <- paste("R package version", meta$Version)
 publishe <- "Dunod, Paris"
+edition <- "3Ã¨me Ã©dition"
 
 citEntry(entry="Manual",
          title = titl,
@@ -13,21 +14,21 @@ citEntry(entry="Manual",
          note         = vers,
          url          = "http://www-irma.u-strasbg.fr/~fbertran/BioStatR",
          textVersion = 
-         paste("Frédéric Bertrand and Myriam Maumy-Bertrand (",year ,"). ", 
+         paste("FrÃ©dÃ©ric Bertrand and Myriam Maumy-Bertrand (",year ,"). ", 
                titl, ", ", vers, ".", sep=""
                )
 )
 
 
 citEntry(entry="Book",
-         title = "Initiation à la Statistique avec R",
+         title = "Initiation Ã  la Statistique avec R",
          author = personList(as.person("F. Bertrand"), 
                              as.person("M. Maumy-Bertrand")),
 	 publisher = "Dunod, Paris",
-         year         = 2010,
+         year         = 2018,
          url          = "http://www-irma.u-strasbg.fr/~fbertran/BioStatR/",
          textVersion = 
-         paste("Frédéric Bertrand and Myriam Maumy-Bertrand (", year ,"). ", 
-               titl, ", ", publishe, ".", sep=""
+         paste("FrÃ©dÃ©ric Bertrand and Myriam Maumy-Bertrand (", year ,"). ", 
+               titl, ", ", edition,", ", publishe, ".", sep=""
                )
 )

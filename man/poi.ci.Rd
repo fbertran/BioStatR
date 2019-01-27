@@ -1,23 +1,23 @@
 \name{poi.ci}
 \alias{poi.ci}
 \title{
-Intervalle de confiance pour le paramètre d'une loi de Poisson
+Intervalle de confiance pour le paramÃ¨tre d'une loi de Poisson
 }
 \description{
-Créé un intervalle de confiance pour le paramètre d'une loi de Poisson.
+CrÃ©Ã© un intervalle de confiance pour le paramÃ¨tre d'une loi de Poisson.
 }
 \usage{
 poi.ci(x, conf.level = 0.95)
 }
 \arguments{
-  \item{x}{Un vecteur de données}
+  \item{x}{Un vecteur de donnÃ©es}
   \item{conf.level}{Niveau de confiance de l'intervalle}
 }
 \value{
-\item{matrix}{Limites des intervalles de confiance demandés.}
+\item{matrix}{Limites des intervalles de confiance demandÃ©s.}
 }
-\references{F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec R, Dunod, 2010.}
-\author{\enc{Frédéric}{Fr\'ed\'eric} Bertrand\cr
+\references{F. Bertrand, M. Maumy-Bertrand, Initiation Ã  la Statistique avec R, Dunod, 3Ã¨me edition, 2018.}
+\author{\enc{FrÃ©dÃ©ric}{Fr\'ed\'eric} Bertrand\cr
 \email{frederic.bertrand@math.unistra.fr}\cr
 \url{http://www-irma.u-strasbg.fr/~fbertran/}
 \enc{Myriam}{Myriam} Maumy-Bertrand\cr

@@ -19,7 +19,7 @@ This dataset measurements of several features of the fruits of small trees such 
 \details{
 This dataset was made during the summer 2009 in the south of France. It provides measurements of several features of the fruits of small trees such as their mass or their length.
 }
-\source{F. Bertrand, M. Maumy-Bertrand, Initiation � la Statistique avec R, Dunod, 2010.}
+\references{F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec R, Dunod, 3ème edition, 2018.}
 \examples{
 data(Mesures5)
 }

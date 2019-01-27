@@ -1,21 +1,21 @@
 \name{cvar}
 \alias{cvar}
 \title{Coefficient de variation}
-\description{Calcule coefficent de variation d'une série statistique}
+\description{Calcule coefficent de variation d'une sÃ©rie statistique}
 \usage{
 cvar(x)
 }
 \arguments{
-  \item{x}{Un vecteur numérique}
+  \item{x}{Un vecteur numÃ©rique}
 }
 \details{
-Le coefficient de variation est égal à l'écart-type corrigé divisé par la moyenne. Il est exprimé en pourcents.
+Le coefficient de variation est Ã©gal Ã  l'Ã©cart-type corrigÃ© divisÃ© par la moyenne. Il est exprimÃ© en pourcents.
 }
 \value{
-\item{num}{Valeur du coefficient de variation exprimé en pourcents}
+\item{num}{Valeur du coefficient de variation exprimÃ© en pourcents}
 }
-\references{F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec R, Dunod, 2010.}
-\author{\enc{Frédéric}{Fr\'ed\'eric} Bertrand\cr
+\references{F. Bertrand, M. Maumy-Bertrand, Initiation Ã  la Statistique avec R, Dunod, 3Ã¨me edition, 2018.}
+\author{\enc{FrÃ©dÃ©ric}{Fr\'ed\'eric} Bertrand\cr
 \email{frederic.bertrand@math.unistra.fr}\cr
 \url{http://www-irma.u-strasbg.fr/~fbertran/}
 \enc{Myriam}{Myriam} Maumy-Bertrand\cr

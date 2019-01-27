@@ -1,19 +1,19 @@
 \name{panel.hist}
 \alias{panel.hist}
 \title{Histrogammes}
-\description{Sert à représenter des histogrammes dans les graphiques matriciels}
+\description{Sert Ã  reprÃ©senter des histogrammes dans les graphiques matriciels}
 \usage{
 panel.hist(x, ...)
 }
 \arguments{
-  \item{x}{Un vecteur numérique}
-  \item{\dots}{Des arguments à transmettre à la fonction qui créé les histogrammes}
+  \item{x}{Un vecteur numÃ©rique}
+  \item{\dots}{Des arguments Ã  transmettre Ã  la fonction qui crÃ©Ã© les histogrammes}
 }
 \details{
 Cette fonction s'utilise avec la fonctions graphique pairs.
 }
-\references{F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec R, Dunod, 2010.}
-\author{\enc{Frédéric}{Fr\'ed\'eric} Bertrand\cr
+\references{F. Bertrand, M. Maumy-Bertrand, Initiation Ã  la Statistique avec R, Dunod, 3Ã¨me edition, 2018.}
+\author{\enc{FrÃ©dÃ©ric}{Fr\'ed\'eric} Bertrand\cr
 \email{frederic.bertrand@math.unistra.fr}\cr
 \url{http://www-irma.u-strasbg.fr/~fbertran/}
 \enc{Myriam}{Myriam} Maumy-Bertrand\cr

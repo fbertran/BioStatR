@@ -1,7 +1,7 @@
 \name{Europe}
 \alias{Europe}
 \docType{data}
-\title{Durées de travail en Europe}
+\title{DurÃ©es de travail en Europe}
 \description{
 This dataset provide mean weekly cumulated work durations for several European countries.
 }
@@ -14,7 +14,7 @@ This dataset provide mean weekly cumulated work durations for several European c
   }
 }
 \details{The duration is given in hours}
-\source{F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec R, Dunod, 2010.}
+\references{F. Bertrand, M. Maumy-Bertrand, Initiation Ã  la Statistique avec R, Dunod, 3Ã¨me edition, 2018.}
 \examples{
 data(Europe)
 }

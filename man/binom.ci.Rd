@@ -8,16 +8,16 @@ Cette fonction permet de calculer plusieurs types d'intervalles de confiance pou
 binom.ci(x, n, conf.level = 0.95, method = c("Wilson", "exact", "Wald", "all"))
 }
 \arguments{
-  \item{x}{Nombre de succès}
+  \item{x}{Nombre de succÃ¨s}
   \item{n}{Nombre d'essais}
-  \item{conf.level}{Niveau de confiance recherché pour l'intervalle}
-  \item{method}{Type d'intervalle de confiance à calculer : intervalle de "Wilson", intervalle "exact" de Clopper-Pearson, intervalle asymptotique de "Wald" ou tous les trois "all"}
+  \item{conf.level}{Niveau de confiance recherchÃ© pour l'intervalle}
+  \item{method}{Type d'intervalle de confiance Ã  calculer : intervalle de "Wilson", intervalle "exact" de Clopper-Pearson, intervalle asymptotique de "Wald" ou tous les trois "all"}
 }
 \value{
-\item{matrix}{Limites des intervalles de confiance demandés.}
+\item{matrix}{Limites des intervalles de confiance demandÃ©s.}
 }
-\references{F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec R, Dunod, 2010.}
-\author{\enc{Frédéric}{Fr\'ed\'eric} Bertrand\cr
+\references{F. Bertrand, M. Maumy-Bertrand, Initiation Ã  la Statistique avec R, Dunod, 3Ã¨me edition, 2018.}
+\author{\enc{FrÃ©dÃ©ric}{Fr\'ed\'eric} Bertrand\cr
 \email{frederic.bertrand@math.unistra.fr}\cr
 \url{http://www-irma.u-strasbg.fr/~fbertran/}
 \enc{Myriam}{Myriam} Maumy-Bertrand\cr
