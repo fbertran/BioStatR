@@ -15,5 +15,7 @@ LazyLoad: yes
 LazyData: yes
 License: GPL-3
 Encoding: UTF-8
-URL: http://www-irma.u-strasbg.fr/~fbertran/
 Classification/MSC:
+URL: http://www-irma.u-strasbg.fr/~fbertran/, https://github.com/fbertran/BioStatR
+BugReports: https://github.com/fbertran/BioStatR/issues
+RoxygenNote: 6.1.1

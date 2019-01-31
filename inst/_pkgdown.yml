@@ -1,0 +1,35 @@
+navbar:
+  title: "BioStatR"
+  type: inverse
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Code du livre"
+      menu:
+      - text: Chapitre1
+        href: articles/Chapitre1.html
+      - text: Chapitre2
+        href: articles/Chapitre2.html
+      - text: Chapitre3
+        href: articles/Chapitre3.html
+      - text: Chapitre4
+        href: articles/Chapitre4.html
+      - text: Chapitre5
+        href: articles/Chapitre5.html
+      - text: Chapitre6
+        href: articles/Chapitre6.html
+      - text: Chapitre7
+        href: articles/Chapitre7.html
+      - text: Chapitre8
+        href: articles/Chapitre8.html
+      - text: Chapitre9
+        href: articles/Chapitre9.html
+      - text: Chapitre10
+        href: articles/Chapitre10.html
+    - text: "Liste des fonctions"
+      href: reference/index.html
+    - text: "Historique des modifications"
+      href: news/index.html
+  right:
+    - icon: fa-github
+      href: https://github.com/fbertran/BioStatR
