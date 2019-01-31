@@ -1,7 +1,7 @@
 Package: BioStatR
 Type: Package
 Title: Initiation à La Statistique Avec R
-Version: 3.0.0
+Version: 3.1.0
 Date: 2019-01-26
 Depends: R (>= 2.10)
 Imports: ggplot2 
