@@ -2,7 +2,7 @@ navbar:
   title: "BioStatR"
   type: inverse
   left:
-    - text: "Home"
+    - icon: fa-home
       href: index.html
     - text: "Code du livre"
       menu:
