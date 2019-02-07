@@ -34,6 +34,19 @@ devtools::install_github("fbertran/BioStatR")
 
 ## Exemples
 
-Les sorties et le code de chaque chapitre sont disponibles dans l'onglet "Code du livre".
+* [Code et résultats du chapitre *1*](articles/Chapitre1.html)
+* [Code et résultats du chapitre *2*](articles/Chapitre2.html)
+* [Code et résultats du chapitre *3*](articles/Chapitre3.html)
+* [Code et résultats du chapitre *4*](articles/Chapitre4.html)
+* [Code et résultats du chapitre *5*](articles/Chapitre5.html)
+* [Code et résultats du chapitre *6*](articles/Chapitre6.html)
+* [Code et résultats du chapitre *7*](articles/Chapitre7.html)
+* [Code et résultats du chapitre *8*](articles/Chapitre8.html)
+* [Code et résultats du chapitre *9*](articles/Chapitre9.html)
+* [Code et résultats du chapitre *10*](articles/Chapitre10.html)
 
-Le répertoire démo contient le code de tous les chapitres du livre.
+
+Les sorties et le code de chaque chapitre sont également accessibles à l'aide de l'onglet "Code du livre".
+
+
+Le répertoire démo inclus dans le package contient le code de tous les chapitres du livre. La fonction demo permet d'y accéder.
