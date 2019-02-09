@@ -15,6 +15,7 @@ Le package BioStatR est un compagnon pour le livre [Initiation à la Statistique
 
 [![ImageLivreR3ed](https://www.dunod.com/sites/default/files/styles/principal_desktop/public/thumbnails/image/9782100782826-001-X.jpeg)]
 
+Ce site et les exemples qui y sont reproduits ont été créés par F. Bertrand and M. Maumy-Bertrand.
 
 ## Installation
 
