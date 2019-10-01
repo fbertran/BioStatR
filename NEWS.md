@@ -1,3 +1,7 @@
+# BioStatR 3.1.1
+
+* Update of the reference to the book in the description file.
+
 # BioStatR 3.1.0
 
 * Added a `NEWS.md` file to track changes to the package.

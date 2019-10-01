@@ -6,4 +6,6 @@ This file documents software changes.
 1.0.3 Upgrade of plotcdf2.
 1.0.4 Fixed non ascii character.
 2.0.0 Upgrade of the package for the second edition of the book. Code for each chapter is now included as demos.
-3.0.0 Upgrade of the package for the third edition of the book. Code for each chapter of the 3rd edition is now included as as demos.
+3.0.0 Upgrade of the package for the third edition of the book. Code for each chapter of the 3rd edition is now included as demos.
+3.1.0 Added a `NEWS.md` file to track changes to the package.
+3.1.1 Update of the reference in the description.

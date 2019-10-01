@@ -5,6 +5,7 @@ output: github_document
 ---
 
 [![CRAN status](https://www.r-pkg.org/badges/version/BioStatR)](https://cran.r-project.org/package=BioStatR)
+[![DOI](https://zenodo.org/badge/18437255.svg)](https://zenodo.org/badge/latestdoi/18437255)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
