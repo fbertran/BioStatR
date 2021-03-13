@@ -1,8 +1,8 @@
 Package: BioStatR
 Type: Package
 Title: Initiation à La Statistique Avec R
-Version: 3.1.1
-Date: 2019-01-26
+Version: 3.1.2
+Date: 2021-03-13
 Depends: R (>= 2.10)
 Imports: ggplot2 
 Authors@R: c(
@@ -16,6 +16,6 @@ LazyData: yes
 License: GPL-3
 Encoding: UTF-8
 Classification/MSC:
-URL: http://www-irma.u-strasbg.fr/~fbertran/, https://github.com/fbertran/BioStatR
-BugReports: https://github.com/fbertran/BioStatR/issues
-RoxygenNote: 6.1.1
+URL: http://www-irma.u-strasbg.fr/~fbertran/, https://github.com/fbertran/BioStatR/
+BugReports: https://github.com/fbertran/BioStatR/issues/
+RoxygenNote: 7.1.1

@@ -1,3 +1,30 @@
+#' Intervalles de confiance pour une proportion
+#' 
+#' Cette fonction permet de calculer plusieurs types d'intervalles de confiance
+#' pour une proportion.
+#' 
+#' 
+#' @param x Nombre de succès
+#' @param n Nombre d'essais
+#' @param conf.level Niveau de confiance recherché pour l'intervalle
+#' @param method Type d'intervalle de confiance à calculer : intervalle de
+#' "Wilson", intervalle "exact" de Clopper-Pearson, intervalle asymptotique de
+#' "Wald" ou tous les trois "all"
+#' @return \item{matrix}{Limites des intervalles de confiance demandés.}
+#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@math.unistra.fr}\cr
+#' \url{http://www-irma.u-strasbg.fr/~fbertran/}\cr 
+#' Maumy-Bertrand\cr \email{myriam.maumy@@math.unistra.fr}\cr
+#' \url{http://www-irma.u-strasbg.fr/~mmaumy/}
+#' @seealso \code{\link{binom.test}}, \code{\link{binom.ci}},
+#' \code{\link{poi.ci}}
+#' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
+#' R, Dunod, 3ème edition, 2018.
+#' @keywords univar
+#' @examples
+#' 
+#' binom.ci(5,10,method="all")
+#' 
+#' @export binom.ci
 binom.ci <- function (x, n, conf.level = 0.95, method = c("Wilson", "exact", "Wald", 
     "all")) 
 {
@@ -10,7 +37,7 @@ binom.ci <- function (x, n, conf.level = 0.95, method = c("Wilson", "exact", "Wa
         else 0
         nu1p <- nu2 + 2
         nu2p <- nu1 - 2
-        pp <- if (x < n) 
+        pp <- if (x < n)
             qf(1/2 + conf.level/2, nu1p, nu2p)
         else 1
         ul <- ((x + 1) * pp)/(n - x + (x + 1) * pp)

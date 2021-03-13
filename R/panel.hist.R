@@ -1,3 +1,26 @@
+#' Histrogammes
+#' 
+#' Sert à représenter des histogrammes dans les graphiques matriciels
+#' 
+#' Cette fonction s'utilise avec la fonctions graphique pairs.
+#' 
+#' @param x Un vecteur numérique
+#' @param \dots Des arguments à transmettre à la fonction qui créé les
+#' histogrammes
+#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@math.unistra.fr}\cr
+#' \url{http://www-irma.u-strasbg.fr/~fbertran/}\cr 
+#' Maumy-Bertrand\cr \email{myriam.maumy@@math.unistra.fr}\cr
+#' \url{http://www-irma.u-strasbg.fr/~mmaumy/}
+#' @seealso \code{\link{pairs}}, \code{\link{hist}}
+#' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
+#' R, Dunod, 3ème edition, 2018.
+#' @keywords univar
+#' @examples
+#' 
+#' data(Mesures5)
+#' pairs(Mesures5,diag.panel="panel.hist")
+#' 
+#' @export panel.hist
 panel.hist <- function(x, ...)
 {
     usr <- par("usr"); on.exit(par(usr))

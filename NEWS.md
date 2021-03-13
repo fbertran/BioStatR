@@ -1,3 +1,7 @@
+# BioStatR 3.1.2
+
+* Update to Roxygen and fix CRAN notes.
+
 # BioStatR 3.1.1
 
 * Update of the reference to the book in the description file.

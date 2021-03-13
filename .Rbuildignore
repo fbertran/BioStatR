@@ -1,3 +1,9 @@
+genlogo.R
+^_pkgdown\.yml$
+^figure$
+^pkgdown$
+^Meta$
+^doc$
 #All packages
 ^.*\.Rproj$
 ^\.Rproj\.user$
@@ -15,3 +21,12 @@
 #Specific
 ^raw-image*$
 ^articles*$
+^\.github$
+#Vignette cache
+^cran-comments[.].*$
+^vignettes/.*[.](pdf|PDF)$
+^vignettes/.*[.](r|R)$
+^vignettes/[.]install_extras$
+^vignettes/.*_cache$
+^vignettes/.*_files$
+^\.github$
