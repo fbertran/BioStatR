@@ -16,13 +16,13 @@ knitr::opts_chunk$set(
 ## Frédéric Bertrand et Myriam Maumy-Bertrand
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![R-CMD-check](https://github.com/fbertran/BioStatR/workflows/R-CMD-check/badge.svg)](https://github.com/fbertran/BioStatR/actions)
 [![Codecov test coverage](https://codecov.io/gh/fbertran/BioStatR/branch/master/graph/badge.svg)](https://codecov.io/gh/fbertran/BioStatR?branch=master)
 [![CRAN status](https://www.r-pkg.org/badges/version/BioStatR)](https://cran.r-project.org/package=BioStatR)
 [![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/BioStatR)](https://cran.r-project.org/package=BioStatR)
-[![GitHub Repo stars](https://img.shields.io/github/stars/fbertran/BioStatR?style=social)](https://github.com/github/fbertran/)
+[![GitHub Repo stars](https://img.shields.io/github/stars/fbertran/BioStatR?style=social)](https://github.com/fbertran/BioStatR/)
 [![DOI](https://zenodo.org/badge/18437255.svg)](https://zenodo.org/badge/latestdoi/18437255)
 <!-- badges: end -->
 
