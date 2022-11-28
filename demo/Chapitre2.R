@@ -1,7 +1,7 @@
 #' ---
 #' title: "Initiation \`a la statistique avec R, code et compl\'ements chapitre 2"
 #' author: "Fr\'ed\'eric Bertrand et Myriam Maumy-Bertrand"
-#' date: "11 d\'ecembre 2018"
+#' date: "04 octobre 2022"
 #' ---
 
 #Chapitre 2
@@ -144,7 +144,7 @@ matrice3[3,3]
 #page 43
 matrice3[3,]
 matrice3[,3]
-matrice3[,3,drop=F]
+matrice3[,3,drop=FALSE]
 
 #page 44
 (matrice4<-matrice3[,c(2,4)])
@@ -191,11 +191,12 @@ aov(Sepal.Length~Species,data=iris)
 #36
 #5.33
 #-26.5
+#
 
 #page 52
 #jeu1
 
-#matrix(scan(),nrow=2,byrow=T)
+#matrix(scan(),nrow=2,byrow=TRUE)
 #1 3 4
 #5 2 1
 
@@ -212,7 +213,7 @@ getwd()
 #setwd("C:\\Data")
 #setwd("C:/Data")
 #page 55
-Chemin<-"/Users/fbertran/git/R3ed_complements/"
+Chemin<-"/Users/fbertran/Documents/GitHub/R3ed_complements/"
 Chemin
 pH<-c(1.2,3.5,11.0,7.1,8.2)
 
@@ -232,7 +233,7 @@ read.table("table1.txt")
 #read.table(file.choose())
 
 #page 58
-read.table("http://www-irma.u-strasbg.fr/~fbertran/BioStatR/table1.txt")
+read.table("https://fbertran.github.io/homepage/BioStatR/table1.txt")
 table1<-read.table("table1.txt")
 table1
 table1$V1
@@ -264,11 +265,11 @@ if(!("xlsx" %in% rownames(installed.packages()))){install.packages("xlsx")}
 library(xlsx)
 (data<-read.xlsx("table7.xls",1))
 args(read.xlsx)
+
 #page 65
 data$BMI<-data$Masse/(data$Taille/100)^2
 write.xlsx(x=data,file="table10.xlsx",sheetName="FeuilleTest",row.names=FALSE)
-write.xlsx(x=data,file="table10.xlsx",sheetName="AutreFeuilleTest",row.names=FALSE,
-           append=TRUE)
+write.xlsx(x=data,file="table10.xlsx",sheetName="AutreFeuilleTest",row.names=FALSE,append=TRUE)
 
 #page 66
 args(write.xlsx)
@@ -323,7 +324,7 @@ read.xls("table7.xls")
 #read.xls("table7.xls",sheet=2)
 
 #page 71
-read.xls("http://www-irma.u-strasbg.fr/~fbertran/BioStatR/table7.xls",sheet=1)
+read.xls("https://fbertran.github.io/homepage/BioStatR/table7.xls",sheet=1)
 if(!("XLConnect" %in% rownames(installed.packages()))){install.packages("XLConnect")}
 #vignette("XLConnect")
 #vignette("XLConnectImpatient")
@@ -389,8 +390,6 @@ age<-c(25,24,23,22,41,40,59,58,47,56)
 names(age)<-nom
 age
 str(age)
-c("Guillaume"=66.5,"Val\'erie"=50.5,"Thomas"=67.5,"Julie"=52.0,"S\'ebastien"=83.0,
-  "St\'ephanie"=65.0,"Gr\'egory"=79.0,"Ambre"=64.0,"Jean-S\'ebastien"=81.0,"Camille"=53.0)
 
 #page 84
 age<-data.frame(age,row.names=nom)
@@ -398,6 +397,8 @@ age
 masse<-c(66.5,50.5,67.5,52,83,65,79,64,81,53)
 names(masse)<-nom
 masse
+c("Guillaume"=66.5,"Val\'erie"=50.5,"Thomas"=67.5,"Julie"=52.0,"S\'ebastien"=83.0,
+  "St\'ephanie"=65.0,"Gr\'egory"=79.0,"Ambre"=64.0,"Jean-S\'ebastien"=81.0,"Camille"=53.0)
 
 #page 85
 masse<-data.frame(masse,row.names=nom)
@@ -419,7 +420,7 @@ str(masse.lourde)
 #page 87
 masse.lourde<-masse[masse>80,,drop=FALSE]
 masse.lourde
-masse.lourde<-masse[masse>80,drop=FALSE]
+masse.lourde<-masse[masse>80]
 taille.masse.lourde<-taille[masse>=80]
 taille.masse.lourde
 taille.masse.lourde<-taille[masse>=80,,drop=FALSE]
@@ -442,8 +443,8 @@ suite<6
 suite==6
 
 #page 90
-suite<=6&suite>=6
-suite<=8&&suite>=4
-suite<=4|suite>=8
+suite<=6 & suite>=6
+suite<=8 && suite>=4
+suite<=4 | suite>=8
 suite<=4||suite>=8
 

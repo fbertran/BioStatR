@@ -7,9 +7,9 @@
 #' @param x Un vecteur numérique
 #' @param \dots Des arguments à transmettre à la fonction qui créé les
 #' histogrammes
-#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@math.unistra.fr}\cr
+#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@utt.fr}\cr
 #' \url{http://www-irma.u-strasbg.fr/~fbertran/}\cr 
-#' Maumy-Bertrand\cr \email{myriam.maumy@@math.unistra.fr}\cr
+#' Maumy-Bertrand\cr \email{myriam.maumy@@utt.fr}\cr
 #' \url{http://www-irma.u-strasbg.fr/~mmaumy/}
 #' @seealso \code{\link{pairs}}, \code{\link{hist}}
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec

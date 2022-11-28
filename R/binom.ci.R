@@ -11,9 +11,9 @@
 #' "Wilson", intervalle "exact" de Clopper-Pearson, intervalle asymptotique de
 #' "Wald" ou tous les trois "all"
 #' @return \item{matrix}{Limites des intervalles de confiance demandés.}
-#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@math.unistra.fr}\cr
+#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@utt.fr}\cr
 #' \url{http://www-irma.u-strasbg.fr/~fbertran/}\cr 
-#' Maumy-Bertrand\cr \email{myriam.maumy@@math.unistra.fr}\cr
+#' Maumy-Bertrand\cr \email{myriam.maumy@@utt.fr}\cr
 #' \url{http://www-irma.u-strasbg.fr/~mmaumy/}
 #' @seealso \code{\link{binom.test}}, \code{\link{binom.ci}},
 #' \code{\link{poi.ci}}

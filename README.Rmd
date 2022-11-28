@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 ```
 # BioStatR <img src="man/figures/logo.png" align="right" width="200"/>
 
-# Initiation à la statistique avec R, 3ème édition
+# Initiation à la statistique avec R, 4ème édition
 ## Frédéric Bertrand et Myriam Maumy-Bertrand
 
 <!-- badges: start -->
@@ -29,7 +29,7 @@ knitr::opts_chunk$set(
 
 Le package BioStatR est un compagnon pour le livre [Initiation à la Statistique avec R](https://www.dunod.com/sciences-techniques/initiation-statistique-avec-r-cours-exemples-exercices-et-problemes-corriges-0).
 
-[![ImageLivreR3ed](https://www.dunod.com/sites/default/files/styles/principal_desktop/public/thumbnails/image/9782100782826-001-X.jpeg)]
+[![ImageLivreR4ed](https://www.dunod.com/sites/default/files/styles/principal_desktop/public/thumbnails/image/9782100782826-001-X.jpeg)]
 
 Ce site et les exemples qui y sont reproduits ont été créés par F. Bertrand and M. Maumy-Bertrand.
 
@@ -65,3 +65,62 @@ Les sorties et le code de chaque chapitre sont également accessibles à l'aide 
 
 
 Le répertoire démo inclus dans le package contient le code de tous les chapitres du livre. La fonction demo permet d'y accéder.
+
+
+## Fichiers à télécharger pour le chapitre 2
+
+Pour les fichiers d'exemple mentionnés dans le livre, voir la page [https://fbertran.github.io/homepage/BioStatR/](https://fbertran.github.io/homepage/BioStatR/index.html) ou utiliser les liens ci-dessous.
+
+Les fichiers d'exemples :
+
+* au format texte `.txt`
+
+    * [table1.txt](https://fbertran.github.io/homepage/BioStatR/table1.txt),
+    * [table2.txt](https://fbertran.github.io/homepage/BioStatR/table2.txt),
+    * [table3.txt](https://fbertran.github.io/homepage/BioStatR/table3.txt),
+    * [table4.txt](https://fbertran.github.io/homepage/BioStatR/table4.txt),
+
+* au format csv (*comma separated values*) `.csv`  
+
+    * [table5.csv](https://fbertran.github.io/homepage/BioStatR/table5.csv),
+    * [table6.csv](https://fbertran.github.io/homepage/BioStatR/table6.csv),
+
+* au format Excel 97-2003 `.xls`
+
+    * [table7.xls](https://fbertran.github.io/homepage/BioStatR/table7.xls),
+    * [table8.xls](https://fbertran.github.io/homepage/BioStatR/table8.xls),
+
+* et au format Excel 2007 `.xlsx`
+
+    * [table9.xlsx](https://fbertran.github.io/homepage/BioStatR/table9.xlsx),
+    * [table10.xlsx](https://fbertran.github.io/homepage/BioStatR/table10.xlsx).
+
+Les durées moyennes des temps de travail moyens dans les pays européens :
+
+* à un format texte mystère, [Europe.csv](https://fbertran.github.io/homepage/BioStatR/Europe.csv),
+
+* au format Excel 97-2003 `.xls`, [Europe.xls](https://fbertran.github.io/homepage/BioStatR/Europe.xls),
+
+* et au format Excel 2007 `.xlsx`, [Europe.xlsx](https://fbertran.github.io/homepage/BioStatR/Europe.xlsx).
+
+Les mesures de fruits d'arbustes :
+
+* au format csv (*comma separated values*) `.csv`,
+
+    * [Mesures.csv](https://fbertran.github.io/homepage/BioStatR/Mesures.csv),
+    
+    * [Mesures5.csv](https://fbertran.github.io/homepage/BioStatR/Mesures5.csv),
+
+* au format Excel 97-2003,
+
+    * [Mesures.xls](https://fbertran.github.io/homepage/BioStatR/Mesures.xls),
+
+    * [Mesures5.xls](https://fbertran.github.io/homepage/BioStatR/Mesures5.xls),
+
+* et au format Excel 2007,
+
+    * [Mesures.xlsx](https://fbertran.github.io/homepage/BioStatR/Mesures.xlsx),
+    
+    * [Mesures5.xlsx](https://fbertran.github.io/homepage/BioStatR/Mesures5.xlsx).
+
+

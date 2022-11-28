@@ -1,3 +1,7 @@
+# BioStatR 4.0.0
+
+* Upgrade of the package for the fourth edition of the book. Update maintainer email address.
+
 # BioStatR 3.1.2
 
 * Update to Roxygen and fix CRAN notes.

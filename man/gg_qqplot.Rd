@@ -85,9 +85,9 @@ R, Dunod, 3e, 2018.
 \code{\link{qqplot}}, \code{\link{qqline}}
 }
 \author{
-Frédéric Bertrand\cr \email{frederic.bertrand@math.unistra.fr}\cr
+Frédéric Bertrand\cr \email{frederic.bertrand@utt.fr}\cr
 \url{http://www-irma.u-strasbg.fr/~fbertran/}\cr 
-Maumy-Bertrand\cr \email{myriam.maumy@math.unistra.fr}\cr
+Maumy-Bertrand\cr \email{myriam.maumy@utt.fr}\cr
 \url{http://www-irma.u-strasbg.fr/~mmaumy/}
 }
 \keyword{univar}

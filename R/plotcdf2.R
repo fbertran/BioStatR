@@ -21,9 +21,9 @@
 #' gris "bw"
 #' @return Un stéréogramme des deux séries statistiques groupées ou des deux
 #' variables discrètes étudiées.
-#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@math.unistra.fr}\cr
+#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@utt.fr}\cr
 #' \url{http://www-irma.u-strasbg.fr/~fbertran/}\cr 
-#' Maumy-Bertrand\cr \email{myriam.maumy@@math.unistra.fr}\cr
+#' Maumy-Bertrand\cr \email{myriam.maumy@@utt.fr}\cr
 #' \url{http://www-irma.u-strasbg.fr/~mmaumy/}
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
 #' R, Dunod, 3ème edition, 2018.
