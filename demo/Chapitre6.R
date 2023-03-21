@@ -1,36 +1,36 @@
 #' ---
-#' title: "Initiation \`a la statistique avec R, code et compl\'ements chapitre 6"
-#' author: "Fr\'ed\'eric Bertrand et Myriam Maumy-Bertrand"
-#' date: "11 d\'ecembre 2018"
+#' title: "Initiation \u00e0 la statistique avec R, code et compl\u00e9ments chapitre 6"
+#' author: "Fr\u00e9d\u00e9ric Bertrand et Myriam Maumy-Bertrand"
+#' date: "20 mars 2023"
 #' ---
 
 #Chapitre 6
-#page 260
+#page 261
 require(BioStatR)
 glycine.blanche<-subset(Mesures,subset=(Mesures$espece=="glycine blanche"))
 mean(glycine.blanche$taille)
 
-#page 261
+#page 262
 var(glycine.blanche$taille)
 
-#page 262
+#page 263
 (var(glycine.blanche$taille))*((length(glycine.blanche$taille)-1)/
   length(glycine.blanche$taille))
 glycine.blanche<-subset(Mesures5,subset=(Mesures5$espece=="glycine blanche"))
 
-#page 263
+#page 264
 effectif.cumule<-cumsum(table(glycine.blanche$graines))
 effectif.cumule
 37/54
 
-#page 264
+#page 265
 qnorm(0.975)
 
-#page 265
+#page 266
 glycine.blanche<-subset(Mesures,subset=(Mesures$espece=="glycine blanche"))
 shapiro.test(glycine.blanche$taille)
 
-#page 239
+#page 267
 length((glycine.blanche$taille))
 qqnorm(glycine.blanche$taille)
 qqline(glycine.blanche$taille)
@@ -53,14 +53,14 @@ ggplot(glycine.blanche, aes(sample = taille)) + geom_point(stat = "qq")
 #ou avec le fonction pr\'ec\'edente et l'option qq.line=FALSE
 gg_qqplot(glycine.blanche,"taille",qq.line=FALSE)
 
-#page 267
+#page 268
 lauriers.roses<-subset(Mesures,subset=(Mesures$espece=="laurier rose"))
 shapiro.test(lauriers.roses$taille) 
 
 #pas issu d'une loi normal au risque alpha=5%
 gg_qqplot(lauriers.roses,"taille")
 
-#page 268
+#page 269
 #essayons un qqplot avec une autre loi, ici Student (car dist = qt) dont on estime les ddl
 if(!("MASS" %in% rownames(installed.packages()))){install.packages("MASS")}
 library(MASS)
@@ -107,39 +107,40 @@ p3=gg_qqplot(lauriers.roses,"taille",qgamma,params)+ggtitle("qqplot gamma")
 
 grid.arrange(p1+ggtitle("qqplot student"), p2+ggtitle("qqplot chi-deux"), p0, p3, nrow=2)
 
+#page 270
 (moyenne<-mean(glycine.blanche$taille))
-
-#page 269
 (quantile<-qt(0.975,53))
 (ecart.type<-sd(glycine.blanche$taille))
 moyenne-quantile*(ecart.type/sqrt(length(glycine.blanche$taille)))
 moyenne+quantile*(ecart.type/sqrt(length(glycine.blanche$taille)))
-t.test(glycine.blanche$taille)
 
 #page 271
+t.test(glycine.blanche$taille)
+
+#page 272
 glycine.blanche<-subset(Mesures,subset=(Mesures$espece=="glycine blanche"))
 shapiro.test(glycine.blanche$taille)
 length(glycine.blanche$taille)
 
-#page 272
+#page 273
 (variance<-var(glycine.blanche$taille))
 qchisq(0.975,53)
 qchisq(0.025,53)
 ((length(glycine.blanche$taille)-1)*variance)/qchisq(0.975,53)
 ((length(glycine.blanche$taille)-1)*variance)/qchisq(0.025,53)
 
-#page 273
+#page 274
 binom.test(x=5,n=10,p=0.5,alternative=c("two.sided","less","greater"),conf.level=0.95)
 
-#page 274
+#page 275
 binom.ci(x=5,n=10,conf.level=0.95,method="exact")
 prop.test(x=5,n=10,p=0.5,alternative=c("two.sided","less","greater"),conf.level=0.95)
 
-#page 275
+#page 276
 binom.ci(x=5,n=10,conf.level=0.95,method="Wilson")
 binom.ci(x=5,n=10,conf.level=0.95,method="Wald")
 
-#page 283
+#page 284
 #Exercice 6.1
 #1)
 toxine<-c(1.2,0.8,0.6,1.1,1.2,0.9,1.5,0.9,1.0)
@@ -149,18 +150,18 @@ sd(toxine)
 #2)
 t.test(toxine)
 
-#page 284
+#page 285
 #4)
 variance<-var(toxine)
 ((length(toxine)-1)*variance)/qchisq(0.975,8)
 ((length(toxine)-1)*variance)/qchisq(0.025,8)
 sqrt(((length(toxine)-1)*variance)/qchisq(0.975,8))
 
-#page 285
+#page 286
 sqrt(((length(toxine)-1)*variance)/qchisq(0.025,8))
 
 #Exercice 6.3
-#page 286
+#page 287
 #1)
 lambda_n<-(1*11+2*41+3*27+4*16+5*10+6*2+7*3)/110
 lambda_n
@@ -170,7 +171,7 @@ echantillon
 poi.ci(echantillon)
 
 #Probl\`eme 6.1
-#page 287
+#page 288
 library(BioStatR)
 #1)
 glycine<-subset(Mesures,subset=(Mesures$espece=="glycine blanche"))
@@ -191,11 +192,11 @@ boxplot(glycine$taille,ylab="Taille d'une gousse de glycine blanche en cm",
   main="Bo^ite \`a moustaches de la taille\n d'une gousse de glycine blanche")
 dev.off()
 
-#page 288
+#page 289
 #4)
 shapiro.test(glycine$taille)
 
-#page 289
+#page 290
 length(glycine$taille)
 #5)
 classes<-histo$breaks
@@ -205,14 +206,14 @@ effectifs
 #6)
 mean(glycine$taille)
 
-#page 290
+#page 291
 sd(glycine$taille)
 #7)
 t.test(glycine$taille)
 #8)
 15.67395-13.87050
 
-#page 291
+#page 292
 1.80345/2
 (8*1.96/((15.67395-13.87050)/2))^2
 

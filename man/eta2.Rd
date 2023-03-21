@@ -26,7 +26,7 @@ eta2(Mesures5$taille,Mesures5$espece)
 }
 \references{
 F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-R, Dunod, 3ème edition, 2018.
+R, Dunod, 4ème édition, 2023.
 }
 \author{
 Frédéric Bertrand\cr \email{frederic.bertrand@utt.fr}\cr

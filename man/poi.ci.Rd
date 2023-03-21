@@ -24,7 +24,7 @@ poi.ci(rpois(20,10))
 }
 \references{
 F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-R, Dunod, 3ème edition, 2018.
+R, Dunod, 4ème édition, 2023.
 }
 \seealso{
 \code{\link{binom.test}}, \code{\link{binom.ci}},

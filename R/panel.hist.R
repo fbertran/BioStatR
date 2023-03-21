@@ -13,7 +13,7 @@
 #' \url{http://www-irma.u-strasbg.fr/~mmaumy/}
 #' @seealso \code{\link{pairs}}, \code{\link{hist}}
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-#' R, Dunod, 3ème edition, 2018.
+#' R, Dunod, 4ème édition, 2023.
 #' @keywords univar
 #' @examples
 #' 

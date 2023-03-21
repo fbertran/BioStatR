@@ -1,11 +1,12 @@
 #' ---
-#' title: "Initiation \`a la statistique avec R, code et compl\'ements chapitre 10"
-#' author: "Fr\'ed\'eric Bertrand et Myriam Maumy-Bertrand"
-#' date: "11 d\'ecembre 2018"
+#' title: "Initiation \u00e0 la statistique avec R, code et compl\u00e9ments chapitre 10"
+#' author: "Fr\u00e9d\u00e9ric Bertrand et Myriam Maumy-Bertrand"
+#' date: "20 mars 2023"
 #' ---
+
 #Chapitre 10
 require(BioStatR)
-#page 402
+#page 403
 foret<-rep(1:3,c(10,10,10))
 hauteur<-c(23.4,24.4,24.6,24.9,25,26.2,26.1,24.8,25.5,25.8,18.9,21.1,21.1,
   22.1,22.5,23.5,22.7,21.3,22.2,21.7,22.5,22.9,23.7,24,24,24.5,24.3,24.2,
@@ -18,16 +19,16 @@ arbre
 moyennes<-tapply(arbre$hauteur,arbre$foret,mean)
 moyennes
 
-#page 403
+#page 404
 variances<-tapply(arbre$hauteur,arbre$foret,var)
 variances
 
-#page 404
+#page 405
 moy.g<-mean(arbre$hauteur)
 moy.g
 mean(moyennes)
 
-#page 405
+#page 406
 plot(arbre$foret,arbre$hauteur)
 points(1:3,moyennes,pch="@")
 abline(h=moy.g)
@@ -37,17 +38,17 @@ points(1:3,moyennes,pch="@")
 abline(h=moy.g)
 dev.off()
 
-#page 408
+#page 409
 options(contrasts=c("contr.sum","contr.poly"))
 modele1<-lm(hauteur~foret,data=arbre)
 anova(modele1)
 modele1_aov<-aov(hauteur~foret,data=arbre)
 summary(modele1_aov)
 
-#page 409
+#page 410
 options(contrasts=c("contr.sum","contr.poly"))
 
-#page 410
+#page 411
 residus<-residuals(modele1)
 shapiro.test(residus)
 length(residus)
@@ -55,14 +56,14 @@ length(residus)
 #En plus : les r\'esidus des deux mod\`eles sont \'egaux
 all(residuals(modele1)==residuals(modele1_aov))
 
-#page 412
+#page 413
 bartlett.test(residus~foret,data=arbre)
 coef(modele1)
 
 #En plus : les coefficients des deux mod\`eles sont \'egaux
 all(coef(modele1)==coef(modele1_aov))
 
-#page 413
+#page 414
 -sum(coef(modele1)[2:3])
 dummy.coef(modele1)
 
@@ -79,7 +80,7 @@ pdf("chap10fig102.pdf")
 print(granova.1w(arbre$hauteur,arbre$foret))
 dev.off()
 
-#page 415
+#page 416
 if(!("granovaGG" %in% rownames(installed.packages()))){
   install.packages("granovaGG")}
 library(granovaGG)
@@ -88,7 +89,7 @@ pdf("chap10fig103.pdf")
 print(granovagg.1w(arbre$hauteur,arbre$foret))
 dev.off()
 
-#page 418
+#page 419
 modele2<-aov(hauteur~foret,data=arbre)
 model.tables(modele2)
 TukeyHSD(modele2)
@@ -123,12 +124,12 @@ postscript("chap10fig103bw.ps",colormodel="gray")
 granovagg.1w(arbre$hauteur,arbre$foret)
 dev.off()
 
-#page 425
+#page 426
 #Exercice 10.1
 #1)
 options(contrasts=c(unordered="contr.sum", ordered="contr.poly"))
 
-#page 426
+#page 427
 #2)
 variete<-rep(1:6,c(5,5,5,5,5,5))
 vitamine<-c(93.6,95.3,96,93.7,96.2,95.3,96.9,95.8,97.3,97.7,94.5,97,97.8,97,
@@ -141,24 +142,24 @@ shapiro.test(residus1)
 length(residus1)
 bartlett.test(residus1~variete,data=exo1)
 
-#page 427
+#page 428
 #3)
 modele1
 summary(modele1)
 
-#page 428
+#page 429
 #4)
 granovagg.1w(vitamine,group=variete)
 pdf("chap10fig105.pdf")
 granovagg.1w(vitamine,group=variete)
 dev.off()
 
-#page 430
+#page 431
 #6)
 Tukey1 <- TukeyHSD(modele1, conf.level = 0.95)
 Tukey1
 
-#page 431
+#page 432
 #4)
 if(!("multcomp" %in% rownames(installed.packages()))){
   install.packages("multcomp")}
@@ -170,7 +171,7 @@ pdf("chap10fig106.pdf")
 plot(Tukey1)
 dev.off()
 
-#page 432
+#page 433
 CI <- confint(wht)
 fortify(CI)
 ggplot(CI,aes(lhs,estimate,ymin=lwr,ymax=upr))+geom_pointrange()+
@@ -191,7 +192,7 @@ ggplot(aes(lhs,estimate),data=fortify(summary(wht))) +
   geom_point(aes(size=p),data=summary(wht)) +scale_size(trans="reverse")
 dev.off()
 
-#page 433
+#page 434
 if(!("multcompView" %in% rownames(installed.packages()))){
   install.packages("multcompView")}
 library(multcompView)
@@ -209,7 +210,7 @@ labels.df <- merge(plot.levels, boxplot.df, by.x = 'plot.labels', by.y = flev,
 return(labels.df)
 }
 
-#page 434
+#page 435
 p_base <- ggplot(exo1,aes(x=variete,y=vitamine)) + geom_boxplot() + 
   geom_text(data = generate_label_df(Tukey1, 'variete'), aes(x = plot.labels, 
   y = V1, label = labels))
@@ -218,7 +219,7 @@ pdf("chap10fig109.pdf")
 print(p_base)
 dev.off()
 
-#page 435
+#page 436
 #Exercice 10.1
 #2)
 traitement<-rep(1:5,c(7,7,7,7,7))
@@ -232,14 +233,14 @@ shapiro.test(residus2)
 length(residus2)
 bartlett.test(residus2~traitement,data=exo2)
 
-#page 436
+#page 437
 #3)
 modele1<-lm(taux~traitement,data=exo2)
 anova(modele1)
 #4)
 power.anova.test(5,7,19.043,76.42857)
 
-#page 437
+#page 438
 power.anova.test(groups=5,between.var=19.043,within.var=76.42857,power=.80)
 granovagg.1w(taux,group=traitement)
 pdf("chap10fig1010.pdf",colormodel="gray")

@@ -1,15 +1,15 @@
 #' ---
-#' title: "Initiation \`a la statistique avec R, code et compl\'ements chapitre 8"
-#' author: "Fr\'ed\'eric Bertrand et Myriam Maumy-Bertrand"
-#' date: "11 d\'ecembre 2018"
+#' title: "Initiation \u00e0 la statistique avec R, code et compl\u00e9ments chapitre 8"
+#' author: "Fr\u00e9d\u00e9ric Bertrand et Myriam Maumy-Bertrand"
+#' date: "20 mars 2023"
 #' ---
 
 #Chapitre 8
 require(BioStatR)
-#page 347
+#page 348
 fisher.test(matrix(c(5,1,0,14),ncol=2,byrow=TRUE))
 
-#page 356
+#page 357
 #Exercice 8.1
 #1)
 Rhesus<-matrix(c(3620,3805,934,172,631,676,165,30),nrow=2,byrow=TRUE)
@@ -27,7 +27,7 @@ pdf("figexo81.pdf")
 plot(Rhesus,main="D\'enombrements")
 dev.off()
 
-#page 357
+#page 358
 #5)
 margin.table(Rhesus)
 margin.table(Rhesus,margin=1)
@@ -38,7 +38,7 @@ chisq.test(Rhesus,simulate.p.value=FALSE)
 #7)
 chisq.test(Rhesus,simulate.p.value=TRUE,B=50000)
 
-#page 358
+#page 359
 #8)
 fisher.test(Rhesus)
 #9)
@@ -51,7 +51,7 @@ rownames(flor)<-c("Fleuri","Pas fleuri")
 colnames(flor)<-c("Engrais A","Engrais B","Engrais C")
 flor<-as.table(flor)
 
-#page 359
+#page 360
 #2)
 flor
 #3)
@@ -64,11 +64,11 @@ chisq.test(flor)
 #En plus : calcul de la p-valeur par simulation
 chisq.test(flor,simulate.p.value=T,B=100000)
 
-#page 360
+#page 361
 #6)
 chisq.test(flor)$residuals
 
-#page 361
+#page 362
 #7)
 if(!("vcd" %in% rownames(installed.packages()))){install.packages("vcd")}
 library(vcd)
@@ -87,7 +87,7 @@ res.test$expected
 res.test
 chisq.test(c(100,18,24,18),p=c(90,30,30,10),rescale.p=TRUE,simulate=TRUE)
 
-#page 362
+#page 363
 #Exercice 8.4
 #1)
 radio<-matrix(c(103,12,18,35),nrow=2,byrow=T)
@@ -99,6 +99,6 @@ radio
 #4)
 mcnemar.test(radio)
 
-#page 363
+#page 364
 #5)
 binom.test(radio[2],n=sum(radio[c(2,3)]))

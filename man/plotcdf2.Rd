@@ -74,7 +74,7 @@ plotcdf2(xx,yy,p,"somme des dés","valeur du plus petit")
 }
 \references{
 F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-R, Dunod, 3ème edition, 2018.
+R, Dunod, 4ème édition, 2023.
 }
 \author{
 Frédéric Bertrand\cr \email{frederic.bertrand@utt.fr}\cr

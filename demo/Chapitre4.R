@@ -1,11 +1,11 @@
 #' ---
-#' title: "Initiation \`a la statistique avec R, code et compl\'ements chapitre 4"
-#' author: "Fr\'ed\'eric Bertrand et Myriam Maumy-Bertrand"
-#' date: "11 d\'ecembre 2018"
+#' title: "Initiation \u00e0 la statistique avec R, code et compl\u00e9ments chapitre 4"
+#' author: "Fr\u00e9d\u00e9ric Bertrand et Myriam Maumy-Bertrand"
+#' date: "20 mars 2023"
 #' ---
 
 #Chapitre 4
-#page 207
+#page 208
 #Exercice 4.2
 #2)
 dnorm(0)
@@ -22,7 +22,7 @@ runif(10)
 rt(10,20)
 
 #Exercice 4.1
-#page 210
+#page 211
 #1)
 #couleurs <- gray(c(0,.25,.5,.75)) #En nuances de gris comme dans le livre
 couleurs<-c("black","red","green","blue") #En couleurs
@@ -45,7 +45,7 @@ legtxt<-c(expression(paste(italic(n)," = 5",sep="")),expression(paste(italic(n),
 legend("topright",legtxt,title=expression(paste(italic(p)," = 0,5",sep="")),pch=c(15,16,
   17),col=c(couleurs[1],couleurs[2],couleurs[3]),cex=2,bg="white",inset=.075)
 
-#page 211
+#page 212
 #2)
 dhypergeom<-function(x,N,n,p) (choose(N*p,x)*choose(N*(1-p),n-x)/choose(N,n))
 fd<-function(x) {dhypergeom(x,14,10,0.5)}
@@ -83,7 +83,7 @@ curve(fr,from=-1,to=-0.000001,ylab="",xlab="",lty=4,lwd=3,add=TRUE,col=couleurs[
 #la fin de cette instruction est sur la page 212
 curve(fr,from=0.000001,to=9,ylab="",xlab="",lty=1,lwd=3,add=TRUE,col=couleurs[4])
 
-#page 212
+#page 213
 legtxt<-c(expression(paste(italic(p)," = 1",sep="")),expression(paste(italic(p)," = 2",
   sep="")),expression(paste(italic(p)," = 3",sep="")),expression(paste(italic(p)," = 6",
   sep="")))
@@ -107,30 +107,31 @@ legend("topleft",legtxt,lty=c(1,2,4,5),lwd=3,col=c(couleurs[2],couleurs[3],coule
 
 #Exercice 4.2
 dnorm(0)
-#page 213
+
+#page 214
 1/sqrt(2*pi)
 pnorm(2.58)
 qnorm(0.975)
 rnorm(50)
 rnorm(20,mean=10,sd=2)
 
-#page 214
+#page 215
 x=seq(-5,5,0.1) ;pdf=dnorm(x) ;plot(x,pdf,type="l",
   main="Densit\'e de la loi normale centr\'ee et r\'eduite")
 runif(10)
 
-#page 215
+#page 216
 rt(10,20)
 
 #Exercice 4.3
 #1)
 dbinom(5,150,0.02)
 
-#page 216
+#page 217
 pbinom(3,150,0.02)
 qbinom(0.99,150,0.02)
 
-#page 217
+#page 218
 #Exercice 4.4
 #1)
 qbinom(0.95,230,0.85,lower.tail = FALSE)
@@ -141,7 +142,7 @@ plot(230:250,qbinom(0.95,230:250,0.85,lower.tail = FALSE))
 abline(h=200)
 abline(v=246)
 
-#page 218
+#page 219
 #2)
 which.max(dbinom(0:330,330,.85))
 
@@ -168,12 +169,12 @@ layout(1)
 dev.off()
 par(old.par)
 
-#page 219
+#page 220
 #Exercice 4.5
 #1)
 1-pnorm(80,92,8)
 
-#page 220
+#page 221
 #2)
 (1-pnorm(80,92,8))*6000
 #3)
@@ -183,7 +184,7 @@ plot(5500:5700,dbinom(5500:5700,6000,.9331928),xlab="n",ylab="Probabilit\'e",lwd
 plot(5590:5610,dbinom(5590:5610,6000,.9331928),xlab="n",ylab="Probabilit\'e",lwd=2)
 dbinom(5599,6000,.9331928)
 
-#page 221
+#page 222
 dbinom(5600,6000,.9331928)
 #En plus : code figure 425
 old.par <- par(no.readonly = TRUE)

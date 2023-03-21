@@ -26,6 +26,6 @@ data(Extrait_Taille)
 }
 \references{
 F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-R, Dunod, 3ème edition, 2018.
+R, Dunod, 4ème édition, 2023.
 }
 \keyword{datasets}

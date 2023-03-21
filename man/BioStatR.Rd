@@ -15,11 +15,11 @@ set.seed(314)
 }
 \references{
 F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-R, 3ème edition, ISBN:9782100782826, Dunod, Paris, 2018.
+R, 4ème édition, ISBN:9782100847945, Dunod, Paris, 2023
 
 \emph{Initiation à la Statistique avec R}, Frédéric Bertrand, 
-Myriam Maumy-Bertrand, 2018, ,
-\url{https://www.dunod.com/sciences-techniques/initiation-statistique-avec-r-cours-exemples-exercices-et-problemes-corriges-0},
+Myriam Maumy-Bertrand, 2023, ,
+\url{https://www.dunod.com/sciences-techniques/initiation-statistique-avec-r-cours-exemples-exercices-et-problemes-corriges-1},
 \url{https://github.com/fbertran/BioStatR/} et
 \url{https://fbertran.github.io/BioStatR/}
 }

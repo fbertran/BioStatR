@@ -26,7 +26,7 @@
 #' Maumy-Bertrand\cr \email{myriam.maumy@@utt.fr}\cr
 #' \url{http://www-irma.u-strasbg.fr/~mmaumy/}
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-#' R, Dunod, 3ème edition, 2018.
+#' R, Dunod, 4ème édition, 2023.
 #' @keywords univar
 #' @examples
 #' 

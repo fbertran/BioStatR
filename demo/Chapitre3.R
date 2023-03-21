@@ -1,7 +1,7 @@
 #' ---
-#' title: "Initiation \`a la statistique avec R, code et compl\'ements chapitre 3"
-#' author: "Fr\'ed\'eric Bertrand et Myriam Maumy-Bertrand"
-#' date: "11 d\'ecembre 2018"
+#' title: "Initiation \u00e0 la statistique avec R, code et compl\u00e9ments chapitre 3"
+#' author: "Fr\u00e9d\u00e9ric Bertrand et Myriam Maumy-Bertrand"
+#' date: "20 mars 2023"
 #' ---
 
 #Chapitre 3
@@ -187,10 +187,10 @@ dev.off()
 
 #page 117
 table(Mesures5$graines)
-ggplot(Mesures5, aes(x = graines)) + geom_bar(fill=I("red")) + 
-  xlab("Nombre de graines") + ylab("Effectif")
 
 #page 118
+ggplot(Mesures5, aes(x = graines)) + geom_bar(fill=I("red")) + 
+  xlab("Nombre de graines") + ylab("Effectif")
 ggplot(Mesures5, aes(x = graines)) + geom_histogram(binwidth=.1,fill=I("red")) +
   xlab("Nombre de graines") + ylab("Effectif")
 pdf("figure36Bggplot.pdf")
@@ -261,6 +261,7 @@ print(ggplot(data.graines_espece,aes(y=effectif,x=nbr.graines,fill=nbr.graines))
 dev.off()
 
 #page 120
+tapply(Mesures5$graines,Mesures5$espece,table)
 if(!("lattice" %in%
      rownames(installed.packages()))){install.packages("lattice")}
 library("lattice")
@@ -1440,9 +1441,9 @@ IQR(Hommes,type=6)
 #8)
 var(Ensemble)*(length(Ensemble)-1)/length(Ensemble)
 var(Femmes)*(length(Femmes)-1)/length(Femmes)
-var(Hommes)*(length(Hommes)-1)/length(Hommes)
 
 #page 187
+var(Hommes)*(length(Hommes)-1)/length(Hommes)
 sd(Ensemble)*sqrt((length(Ensemble)-1)/length(Ensemble))
 sd(Femmes)*sqrt((length(Femmes)-1)/length(Femmes))
 sd(Hommes)*sqrt((length(Hommes)-1)/length(Hommes))
@@ -1451,6 +1452,8 @@ sd(Hommes)*sqrt((length(Hommes)-1)/length(Hommes))
 if(!("e1071" %in% rownames(installed.packages()))){install.packages("e1071")}
 library(e1071)
 skewness(Femmes,type=1)
+
+#page 188
 kurtosis(Femmes,type=1)
 
 

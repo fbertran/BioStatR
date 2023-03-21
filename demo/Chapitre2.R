@@ -1,7 +1,7 @@
 #' ---
-#' title: "Initiation \`a la statistique avec R, code et compl\'ements chapitre 2"
-#' author: "Fr\'ed\'eric Bertrand et Myriam Maumy-Bertrand"
-#' date: "04 octobre 2022"
+#' title: "Initiation \u00e0 la statistique avec R, code et compl\u00e9ments chapitre 2"
+#' author: "Fr\u00e9d\u00e9ric Bertrand et Myriam Maumy-Bertrand"
+#' date: "20 mars 2023"
 #' ---
 
 #Chapitre 2
@@ -166,7 +166,7 @@ matrice8<-matrice6 %*% matrice7
 matrice8
 
 #page 47
-#matrice6 * matrice7
+try(matrice6 * matrice7)
 matrice9<-matrix(7:12,ncol=3)
 matrice9
 matrice10<-matrice6 * matrice9
@@ -176,7 +176,7 @@ matrice11<-matrice9 * matrice6
 #page 48
 matrice11<-matrice9 * matrice6
 matrice11
-#matrice12<-matrice7 %*% matrice6
+try(matrice12<-matrice7 %*% matrice6)
 
 #page 49
 mode
@@ -208,10 +208,12 @@ res<-data.frame(mat,phy)
 res
 res2<-data.frame(mat,phy,row.names=c("Guillaume","Val\'erie","Thomas","Julie"))
 res2
+
 #page 54
 getwd()
 #setwd("C:\\Data")
 #setwd("C:/Data")
+
 #page 55
 Chemin<-"/Users/fbertran/Documents/GitHub/R3ed_complements/"
 Chemin
@@ -223,7 +225,7 @@ setwd(Chemin)
 save(pH,file="FichierpH.RData")
 #page 55
 rm(pH)
-#pH
+try(pH)
 load("FichierpH.RData")
 pH
 
@@ -324,7 +326,7 @@ read.xls("table7.xls")
 #read.xls("table7.xls",sheet=2)
 
 #page 71
-read.xls("https://fbertran.github.io/homepage/BioStatR/table7.xls",sheet=1)
+#read.xls("https://fbertran.github.io/homepage/BioStatR/table7.xls",sheet=1)
 if(!("XLConnect" %in% rownames(installed.packages()))){install.packages("XLConnect")}
 #vignette("XLConnect")
 #vignette("XLConnectImpatient")
@@ -365,17 +367,17 @@ masse<-c(28,27.5,27,28,30.5,30,31,29.5,30,31,31,31.5,32,30,30.5)
 masse
 masse1<-c(40,39,41,37.5,43)
 masse1
-nouveau.masse<-c(rep(masse1,2),masse[6:15])
-nouveau.masse
-length(nouveau.masse)
+nouvelle.masse<-c(rep(masse1,2),masse[6:15])
+nouvelle.masse
+length(nouvelle.masse)
 
 #page 82
-(nouveau.masse<-c(rep(masse1,2),tail(masse,n=10)))
-nouveau.masse
+(nouvelle.masse<-c(rep(masse1,2),tail(masse,n=10)))
+nouvelle.masse
 library(xlsx)
-write.xlsx(nouveau.masse,file="test.xlsx")
-#write.xls(data.frame(masse=nouveau.masse),file=file.choose())
-#massedf<-data.frame(nouveau.masse)
+write.xlsx(nouvelle.masse,file="Masse.xlsx")
+write.xlsx(data.frame(masse=nouvelle.masse),file="Masse.xlsx")
+#massedf<-data.frame(nouvelle.masse)
 #library(RODBC)
 #connexion<-odbcConnectExcel("Resultat.xls",readOnly = FALSE)
 #sqlSave(connexion,massedf)
@@ -390,6 +392,9 @@ age<-c(25,24,23,22,41,40,59,58,47,56)
 names(age)<-nom
 age
 str(age)
+masse
+c("Guillaume"=25,"Val\'erie"=24,"Thomas"=23,"Julie"=22,"S\'ebastien"=41,
+  "St\'ephanie"=40,"Gr\'egory"=59,"Ambre"=58,"Jean-S\'ebastien"=47,"Camille"=56)
 
 #page 84
 age<-data.frame(age,row.names=nom)
@@ -397,8 +402,6 @@ age
 masse<-c(66.5,50.5,67.5,52,83,65,79,64,81,53)
 names(masse)<-nom
 masse
-c("Guillaume"=66.5,"Val\'erie"=50.5,"Thomas"=67.5,"Julie"=52.0,"S\'ebastien"=83.0,
-  "St\'ephanie"=65.0,"Gr\'egory"=79.0,"Ambre"=64.0,"Jean-S\'ebastien"=81.0,"Camille"=53.0)
 
 #page 85
 masse<-data.frame(masse,row.names=nom)

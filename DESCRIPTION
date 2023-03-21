@@ -1,8 +1,8 @@
 Package: BioStatR
 Type: Package
 Title: Initiation à La Statistique Avec R
-Version: 4.0.0
-Date: 2022-11-28
+Version: 4.0.1
+Date: 2023-03-21
 Depends: R (>= 2.10)
 Imports: ggplot2 
 Authors@R: c(
@@ -10,7 +10,7 @@ Authors@R: c(
 	person(given = "Myriam", family= "Maumy-Bertrand", role = c("aut"), email = "myriam.maumy@utt.fr", comment = c(ORCID = "0000-0002-4615-1512")))
 Author: Frederic Bertrand [cre, aut] (<https://orcid.org/0000-0002-0837-8281>), Myriam Maumy-Bertrand [aut] (<https://orcid.org/0000-0002-4615-1512>)
 Maintainer: Frederic Bertrand <frederic.bertrand@utt.fr>
-Description: Datasets and functions for the book "Initiation à la Statistique avec R", F. Bertrand and M. Maumy-Bertrand (2022, ISBN:978-2100782826 Dunod, 4ème edition).
+Description: Datasets and functions for the book "Initiation à la Statistique avec R", F. Bertrand and M. Maumy-Bertrand (2022, ISBN:978-2100782826 Dunod, fourth edition).
 LazyLoad: yes
 LazyData: yes
 License: GPL-3

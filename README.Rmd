@@ -27,9 +27,9 @@ knitr::opts_chunk$set(
 <!-- badges: end -->
 
 
-Le package BioStatR est un compagnon pour le livre [Initiation à la Statistique avec R](https://www.dunod.com/sciences-techniques/initiation-statistique-avec-r-cours-exemples-exercices-et-problemes-corriges-0).
+Le package BioStatR est un compagnon pour le livre [Initiation à la Statistique avec R](https://www.dunod.com/sciences-techniques/initiation-statistique-avec-r-cours-exemples-exercices-et-problemes-corriges-1).
 
-[![ImageLivreR4ed](https://www.dunod.com/sites/default/files/styles/principal_desktop/public/thumbnails/image/9782100782826-001-X.jpeg)]
+[![ImageLivreR4ed](https://www.dunod.com/sites/default/files/styles/principal_desktop/public/thumbnails/image/9782100847945-001-X.jpeg)]
 
 Ce site et les exemples qui y sont reproduits ont été créés par F. Bertrand and M. Maumy-Bertrand.
 

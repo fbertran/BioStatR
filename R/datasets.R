@@ -13,7 +13,7 @@
 #' \describe{ \item{Pays}{a factor with the some of the European
 #' countries as levels} \item{Duree}{weekly cumulative work duration} }
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-#' R, Dunod, 3ème edition, 2018.
+#' R, Dunod, 4ème édition, 2023.
 #' @keywords datasets
 #' @examples
 #' 
@@ -41,7 +41,7 @@ NULL
 #' numeric vector} \item{espece}{a factor with levels \code{bignone},
 #' \code{glycine blanche}, \code{glycine violette} and \code{lauriers roses}} }
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-#' R, Dunod, 3ème edition, 2018.
+#' R, Dunod, 4ème édition, 2023.
 #' @keywords datasets
 #' @examples
 #' 
@@ -69,7 +69,7 @@ NULL
 #' numeric vector} \item{espece}{a factor with levels \code{bignone},
 #' \code{glycine blanche}, \code{glycine violette} and \code{lauriers roses}} }
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-#' R, Dunod, 3ème edition, 2018.
+#' R, Dunod, 4ème édition, 2023.
 #' @keywords datasets
 #' @examples
 #' 
@@ -99,7 +99,7 @@ NULL
 #' with levels \code{bignone}, \code{glycine blanche}, \code{glycine violette}
 #' and \code{lauriers roses}} }
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-#' R, Dunod, 3ème edition, 2018.
+#' R, Dunod, 4ème édition, 2023.
 #' @keywords datasets
 #' @examples
 #' 
@@ -127,7 +127,7 @@ NULL
 #' \item{poids}{le poids de l'individu} \item{taille}{la
 #' hauteur de l'individu} }
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
-#' R, Dunod, 3ème edition, 2018.
+#' R, Dunod, 4ème édition, 2023.
 #' @keywords datasets
 #' @examples
 #' 
