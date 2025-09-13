@@ -1,3 +1,8 @@
+url: https://fbertran.github.io/BioStatR
+
+template:
+  bootstrap: 5
+
 navbar:
   title: "BioStatR"
   type: inverse

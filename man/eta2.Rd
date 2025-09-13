@@ -29,9 +29,9 @@ F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
 R, Dunod, 4ème édition, 2023.
 }
 \author{
-Frédéric Bertrand\cr \email{frederic.bertrand@utt.fr}\cr
-\url{http://www-irma.u-strasbg.fr/~fbertran/}\cr 
-Maumy-Bertrand\cr \email{myriam.maumy@utt.fr}\cr
-\url{http://www-irma.u-strasbg.fr/~mmaumy/}
+Frédéric Bertrand\cr \email{frederic.bertrand@lecnam.net}\cr
+\url{https://fbertran.github.io/homepage/}\cr 
+Maumy-Bertrand\cr \email{myriam.maumy@ehesp.fr}\cr
+\url{https://www.ehesp.fr/annuaire/enseignement-recherche/myriam-maumy/}
 }
 \keyword{univar}

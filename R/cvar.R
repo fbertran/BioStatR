@@ -7,10 +7,10 @@
 #' 
 #' @param x Un vecteur numérique
 #' @return \item{num}{Valeur du coefficient de variation exprimé en pourcents}
-#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@utt.fr}\cr
-#' \url{http://www-irma.u-strasbg.fr/~fbertran/}\cr 
+#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@lecnam.net}\cr
+#' \url{https://fbertran.github.io/homepage/}\cr 
 #' Maumy-Bertrand\cr \email{myriam.maumy@@utt.fr}\cr
-#' \url{http://www-irma.u-strasbg.fr/~mmaumy/}
+#' \url{https://www.ehesp.fr/annuaire/enseignement-recherche/myriam-maumy/}
 #' @seealso \code{\link{mean}}, \code{\link{sd}}
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
 #' R, Dunod, 4ème édition, 2023.

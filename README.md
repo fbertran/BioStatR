@@ -6,7 +6,10 @@
 # Initiation à la statistique avec R, 4ème édition
 ## Frédéric Bertrand et Myriam Maumy-Bertrand
 
+<https://doi.org/10.32614/CRAN.package.BioStatR>
+
 <!-- badges: start -->
+[![DOI](https://img.shields.io/badge/doi-10.32614/CRAN.package.BioStatR-blue.svg)](https://doi.org/10.32614/CRAN.package.BioStatR)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![R-CMD-check](https://github.com/fbertran/BioStatR/workflows/R-CMD-check/badge.svg)](https://github.com/fbertran/BioStatR/actions)
@@ -14,7 +17,6 @@
 [![CRAN status](https://www.r-pkg.org/badges/version/BioStatR)](https://cran.r-project.org/package=BioStatR)
 [![CRAN RStudio mirror downloads](https://cranlogs.r-pkg.org/badges/BioStatR)](https://cran.r-project.org/package=BioStatR)
 [![GitHub Repo stars](https://img.shields.io/github/stars/fbertran/BioStatR?style=social)](https://github.com/fbertran/BioStatR/)
-[![DOI](https://zenodo.org/badge/18437255.svg)](https://zenodo.org/badge/latestdoi/18437255)
 <!-- badges: end -->
 
 
@@ -29,14 +31,14 @@ Ce site et les exemples qui y sont reproduits ont été créés par F. Bertrand 
 Vous pouvez installer la dernière version du package BioStatR depuis le [CRAN](https://CRAN.R-project.org) with:
 
 
-```r
+``` r
 install.packages("BioStatR")
 ```
 
 Vous pouvez installer la dernière version du package BioStatR depuis le [github](https://github.com) with:
 
 
-```r
+``` r
 devtools::install_github("fbertran/BioStatR")
 ```
 

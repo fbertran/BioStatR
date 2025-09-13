@@ -5,6 +5,9 @@ year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
 vers <- paste("R package version", meta$Version)
 publishe <- "Dunod, Paris"
 edition <- "4ème édition"
+doi <- paste0("10.32614/CRAN.package.", meta$Package)
+urldoi <- paste0("https://doi.org/", doi)
+
 
 bibentry(bibtype="Manual",
          title = titl,
@@ -12,10 +15,11 @@ bibentry(bibtype="Manual",
                     person(given = "Myriam", family= "Maumy-Bertrand")),
          year         = year,
          note         = vers,
-         url          = "http://www-irma.u-strasbg.fr/~fbertran/BioStatR",
+         url          = "https://CRAN.R-project.org/package=BioStatR",
+         doi         = doi,
          textVersion = 
          paste("Frédéric Bertrand and Myriam Maumy-Bertrand (",year ,"). ", 
-               titl, ", ", vers, ".", sep=""
+               titl, ", ", vers, ". doi:", doi, ".", sep=""
                )
 )
 
@@ -26,7 +30,7 @@ bibentry(bibtype="Book",
                     person(given = "Myriam", family= "Maumy-Bertrand")),
 	 publisher = "Dunod, Paris",
          year         = 2023,
-         url          = "http://www-irma.u-strasbg.fr/~fbertran/BioStatR/",
+         url          = "https://fbertran.github.io/homepage/",
          textVersion = 
          paste("Frédéric Bertrand and Myriam Maumy-Bertrand (", year ,"). ", 
                titl, ", ", edition,", ", publishe, ".", sep=""

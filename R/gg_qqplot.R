@@ -24,10 +24,10 @@
 #' Affiche les valeurs des quartiles théoriques par lesquels passe la droite
 #' ainsi que son ordonnée à l'origine et sa pente si le tracé de celle-ci est
 #' demandé.}
-#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@utt.fr}\cr
-#' \url{http://www-irma.u-strasbg.fr/~fbertran/}\cr 
-#' Maumy-Bertrand\cr \email{myriam.maumy@@utt.fr}\cr
-#' \url{http://www-irma.u-strasbg.fr/~mmaumy/}
+#' @author Frédéric Bertrand\cr \email{frederic.bertrand@@lecnam.net}\cr
+#' \url{https://fbertran.github.io/homepage/}\cr 
+#' Maumy-Bertrand\cr \email{myriam.maumy@@ehesp.fr}\cr
+#' \url{https://www.ehesp.fr/annuaire/enseignement-recherche/myriam-maumy/}
 #' @seealso \code{\link{qqplot}}, \code{\link{qqline}}
 #' @references F. Bertrand, M. Maumy-Bertrand, Initiation à la Statistique avec
 #' R, Dunod, 3e, 2018.
@@ -74,10 +74,11 @@ gg_qqplot <- function(df,var,qdist=qnorm,params=list(),qq.line=TRUE,color="red",
   slope <- diff(y)/diff(x)
   int <- y[1L] - slope * x[1L]
     }
-  p <- ggplot2::ggplot(df, aes_string(sample=var)) + ggplot2::stat_qq(alpha = alpha,distribution=qdist,dparams=params)
+  p <- ggplot2::ggplot(df, aes(sample = .data[[var]])) + ggplot2::stat_qq(alpha = alpha,distribution=qdist,dparams=params)
   if(qq.line){
     p <- p + ggplot2::geom_abline(slope = slope, intercept = int, color=color)  
   cat(paste(c("1st quartile : ",x[1],"\n3rd quartile : ",x[2],"\nIntercept : ",int,"\nSlope : ",slope,"\n"),sep=""))
     }
   return(p)
 }
+

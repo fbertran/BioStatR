@@ -1,15 +1,19 @@
 Package: BioStatR
 Type: Package
 Title: Initiation à La Statistique Avec R
-Version: 4.0.1
-Date: 2023-03-21
+Version: 4.1.0
+Date: 2025-09-13
 Depends: R (>= 2.10)
 Imports: ggplot2 
+Suggests: GGally, Hmisc, MASS, OneTwoSamples, TeachingDemos, agricolae, 
+    e1071, gdata, granova, granovaGG, gridExtra, hcci, lattice, 
+    lmPerm, lmtest, multcomp, multcompView, plyr, qcc, reshape, 
+    sandwich, scales, vcd, vdiffr, xlsx, testthat (>= 3.0.0)
 Authors@R: c(
-	person(given = "Frederic", family= "Bertrand", role = c("cre", "aut"), email = "frederic.bertrand@utt.fr", comment = c(ORCID = "0000-0002-0837-8281")),
-	person(given = "Myriam", family= "Maumy-Bertrand", role = c("aut"), email = "myriam.maumy@utt.fr", comment = c(ORCID = "0000-0002-4615-1512")))
+	person(given = "Frederic", family= "Bertrand", role = c("cre", "aut"), email = "frederic.bertrand@lecnam.net", comment = c(ORCID = "0000-0002-0837-8281")),
+	person(given = "Myriam", family= "Maumy-Bertrand", role = c("aut"), email = "myriam.maumy@ehesp.fr", comment = c(ORCID = "0000-0002-4615-1512")))
 Author: Frederic Bertrand [cre, aut] (<https://orcid.org/0000-0002-0837-8281>), Myriam Maumy-Bertrand [aut] (<https://orcid.org/0000-0002-4615-1512>)
-Maintainer: Frederic Bertrand <frederic.bertrand@utt.fr>
+Maintainer: Frederic Bertrand <frederic.bertrand@lecnam.net>
 Description: Datasets and functions for the book "Initiation à la Statistique avec R", F. Bertrand and M. Maumy-Bertrand (2022, ISBN:978-2100782826 Dunod, fourth edition).
 LazyLoad: yes
 LazyData: yes
@@ -18,4 +22,5 @@ Encoding: UTF-8
 Classification/MSC:
 URL: https://fbertran.github.io/BioStatR/, https://github.com/fbertran/BioStatR/
 BugReports: https://github.com/fbertran/BioStatR/issues/
-RoxygenNote: 7.2.1
+RoxygenNote: 7.3.2
+Config/testthat/edition: 3
