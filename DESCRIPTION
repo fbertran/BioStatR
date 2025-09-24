@@ -1,8 +1,8 @@
 Package: BioStatR
 Type: Package
 Title: Initiation à La Statistique Avec R
-Version: 4.1.0
-Date: 2025-09-13
+Version: 4.1.1
+Date: 2025-09-14
 Depends: R (>= 2.10)
 Imports: ggplot2 
 Suggests: GGally, Hmisc, MASS, OneTwoSamples, TeachingDemos, agricolae, 
@@ -22,5 +22,5 @@ Encoding: UTF-8
 Classification/MSC:
 URL: https://fbertran.github.io/BioStatR/, https://github.com/fbertran/BioStatR/
 BugReports: https://github.com/fbertran/BioStatR/issues/
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Config/testthat/edition: 3

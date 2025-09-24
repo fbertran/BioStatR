@@ -1,3 +1,7 @@
+# BioStatR 4.1.1
+
+* Fix for tests for M1Mac
+
 # BioStatR 4.1.0
 
 * Maintainer email update
