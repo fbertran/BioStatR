@@ -29,4 +29,4 @@ genlogo.R
 ^vignettes/[.]install_extras$
 ^vignettes/.*_cache$
 ^vignettes/.*_files$
-^\.github$
+^\.github$\.DS_Store$
